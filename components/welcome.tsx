@@ -325,10 +325,10 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
                 <div className="xs:space-y-5 animate-in fade-in slide-in-from-bottom-8 space-y-4 duration-1000 sm:space-y-6 md:space-y-8">
                   <div>
                     <span className="xs:px-3 xs:py-1.5 inline-block rounded-full border border-violet-500/30 bg-gradient-to-r from-purple-500/10 to-violet-500/10 px-2.5 py-1 text-xs font-semibold tracking-widest text-violet-600 uppercase sm:px-4 dark:text-violet-300">
-                      AI-Powered IT Support
+                      AI-Powered IT Support 
                     </span>
                   </div>
-                  <h1 className="xs:text-3xl text-2xl leading-tight font-bold tracking-tight text-slate-700 sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl dark:text-white">
+                  <h1 className="xs:text-3xl whitespace-nowrap text-2xl leading-tight font-bold tracking-tight text-slate-700 sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl dark:text-white">
                     IT Helpdesk Support
                     <span className="block bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">
                       Available 24/7
