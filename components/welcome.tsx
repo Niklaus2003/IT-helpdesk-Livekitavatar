@@ -102,61 +102,61 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
     }, []);
 
     const getFeatureIcon = (index: number) => {
-    const icons = [
-      // Headset icon for IT Support
-      <svg
-        key="headset"
-        className="h-5 w-5 sm:h-6 sm:w-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a7 7 0 00-14 0v2m14 0v4a2 2 0 01-2 2h-2"
-        />
-      </svg>,
-      // Tool/wrench icon for Troubleshooting
-      <svg
-        key="tool"
-        className="h-5 w-5 sm:h-6 sm:w-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>,
-      // Ticket/clipboard icon for Ticket System
-      <svg
-        key="ticket"
-        className="h-5 w-5 sm:h-6 sm:w-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-        />
-      </svg>,
-    ];
-    return icons[index];
-  };
+      const icons = [
+        // Headset icon for IT Support
+        <svg
+          key="headset"
+          className="h-5 w-5 sm:h-6 sm:w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a7 7 0 00-14 0v2m14 0v4a2 2 0 01-2 2h-2"
+          />
+        </svg>,
+        // Tool/wrench icon for Troubleshooting
+        <svg
+          key="tool"
+          className="h-5 w-5 sm:h-6 sm:w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+        </svg>,
+        // Ticket/clipboard icon for Ticket System
+        <svg
+          key="ticket"
+          className="h-5 w-5 sm:h-6 sm:w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+          />
+        </svg>,
+      ];
+      return icons[index];
+    };
 
     const handleStartCall = () => {
       if (disabled) return;
@@ -307,7 +307,7 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
 
             <div className="flex items-center gap-2 sm:gap-4">
               <ThemeToggle />
-              <Button                
+              <Button
                 onClick={handleStartCall}
                 disabled={disabled}
                 className="xs:px-4 xs:py-2 ml-2 flex-shrink-0 transform rounded-lg border border-purple-400/30 bg-gradient-to-r from-purple-500 to-violet-500 px-3 py-1.5 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-violet-600 hover:shadow-2xl sm:px-6 sm:py-2.5 sm:text-sm md:px-8"
@@ -335,9 +335,9 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
                     </span>
                   </h1>
                   <p className="xs:text-base max-w-xl text-sm leading-relaxed font-light text-slate-600 sm:text-lg md:text-lg dark:text-slate-300">
-                    Get instant IT support through natural voice conversation. Our AI assistant helps
-                    troubleshoot issues, provides step-by-step solutions, and automatically creates
-                    helpdesk tickets when needed.
+                    Get instant IT support through natural voice conversation. Our AI assistant
+                    helps troubleshoot issues, provides step-by-step solutions, and automatically
+                    creates helpdesk tickets when needed.
                   </p>
                 </div>
 
@@ -501,17 +501,17 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
           {/* Footer */}
           <div className="xs:px-4 xs:py-4 relative right-0 bottom-0 left-0 z-20 border-t border-black/10 px-3 py-3 sm:px-6 sm:py-5 md:px-8 md:py-6 lg:px-16 dark:border-white/10">
             <p className="text-center text-xs font-light text-slate-600 sm:text-sm dark:text-slate-400">
-                Need help?{' '}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="http://10xds.com/contact-us/"
-                  className="font-semibold text-violet-500 underline underline-offset-2 transition-colors duration-300 hover:text-violet-400 dark:text-violet-400 dark:hover:text-violet-300"
-                >
-                  Contact IT Support
-                </a>{' '}
-                · © Exponential Digital Solutions (10xDS) IT Helpdesk
-              </p>
+              Need help?{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://10xds.com/contact-us/"
+                className="font-semibold text-violet-500 underline underline-offset-2 transition-colors duration-300 hover:text-violet-400 dark:text-violet-400 dark:hover:text-violet-300"
+              >
+                Contact IT Support
+              </a>{' '}
+              · © Exponential Digital Solutions (10xDS) IT Helpdesk
+            </p>
           </div>
         </section>
 

@@ -272,10 +272,10 @@ export const SessionView = ({
                     // Full viewport height minus top/bottom padding and avatar height on small screens
                     'h-[calc(100svh-16rem-140px-1rem)]',
                     // On larger screens, it's fixed to the bottom. On smaller screens, it's part of the flex layout.
-                    'lg:fixed lg:bottom-48 lg:left-1/2 lg:w-3/5 lg:-translate-x-1/2 lg:h-[70vh]'
+                    'lg:fixed lg:bottom-48 lg:left-1/2 lg:h-[70vh] lg:w-3/5 lg:-translate-x-1/2'
                   )}
                   style={{
-                    maxHeight: 'calc(100svh - 20rem)'
+                    maxHeight: 'calc(100svh - 20rem)',
                   }}
                 >
                   <div ref={chatRef} className="flex-1 space-y-4 overflow-y-auto p-4">
