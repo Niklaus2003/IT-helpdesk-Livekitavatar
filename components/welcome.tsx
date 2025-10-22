@@ -38,28 +38,28 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
 
     const features = [
       {
-        title: 'Avatar Integration',
-        desc: 'Combine voice with expressive avatars to create human-like digital assistants for customer service and enterprise communication.',
+        title: 'Instant IT Support',
+        desc: 'Get immediate assistance with hardware, software, network issues, and password resets through natural voice conversation.',
       },
       {
-        title: 'Low-Latency Streaming',
-        desc: "Powered by LiveKit's WebRTC infrastructure for ultra-fast bi-directional audio and event streaming under 300ms.",
+        title: 'Smart Troubleshooting',
+        desc: "AI-powered diagnostics guide you through step-by-step solutions with real-time support powered by LiveKit's infrastructure.",
       },
       {
-        title: 'Scalable Multi-User Sessions',
-        desc: 'Handle thousands of simultaneous interactions effortlessly with distributed and scalable agent architecture.',
+        title: 'Automatic Ticket Creation',
+        desc: 'When issues need escalation, tickets are automatically created and sent to our IT team for quick follow-up.',
       },
     ];
 
     const stats = [
-      { value: '300ms', label: 'Response Time', sublabel: 'Instant, natural replies' },
+      { value: '24/7', label: 'IT Support', sublabel: 'Always available when you need help' },
       {
-        value: 'Realistic',
-        label: 'Human-Friendly Avatar',
-        sublabel: 'Engages users with lifelike interaction',
+        value: 'Instant',
+        label: 'Issue Resolution',
+        sublabel: 'Quick troubleshooting and solutions',
       },
-      { value: '1-Click', label: 'Easy Access', sublabel: 'Seamless voice connection anytime' },
-      { value: '99.9%', label: 'Accuracy', sublabel: 'Fast and precise AI responses' },
+      { value: 'Smart', label: 'Ticket System', sublabel: 'Auto-escalation to IT team' },
+      { value: '99%', label: 'Success Rate', sublabel: 'Fast and accurate IT assistance' },
     ];
 
     useEffect(() => {
@@ -102,51 +102,75 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
     }, []);
 
     const getFeatureIcon = (index: number) => {
-      const icons = [
-        <svg
-          key="lightning"
-          className="h-5 w-5 sm:h-6 sm:w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          />
-        </svg>,
-        <svg
-          key="voice"
-          className="h-5 w-5 sm:h-6 sm:w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4"
-          />
-        </svg>,
-        <svg
-          key="lock"
-          className="h-5 w-5 sm:h-6 sm:w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-          />
-        </svg>,
-      ];
-      return icons[index];
+    const icons = [
+      // Headset icon for IT Support
+      <svg
+        key="headset"
+        className="h-5 w-5 sm:h-6 sm:w-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a7 7 0 00-14 0v2m14 0v4a2 2 0 01-2 2h-2"
+        />
+      </svg>,
+      // Tool/wrench icon for Troubleshooting
+      <svg
+        key="tool"
+        className="h-5 w-5 sm:h-6 sm:w-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      </svg>,
+      // Ticket/clipboard icon for Ticket System
+      <svg
+        key="ticket"
+        className="h-5 w-5 sm:h-6 sm:w-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+        />
+      </svg>,
+    ];
+    return icons[index];
+  };
+
+    const handleStartCall = () => {
+      if (disabled) return;
+
+      const loginTimestamp = localStorage.getItem('loginTimestamp');
+      const oneHour = 60 * 60 * 1000;
+
+      if (loginTimestamp && Date.now() - parseInt(loginTimestamp, 10) < oneHour) {
+        // If a valid session exists, start the call directly
+        onStartCall();
+      } else {
+        // Otherwise, open the login modal
+        setIsLoginOpen(true);
+      }
     };
 
     return (
@@ -283,11 +307,8 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
 
             <div className="flex items-center gap-2 sm:gap-4">
               <ThemeToggle />
-              <Button
-                onClick={() => {
-                  if (disabled) return;
-                  setIsLoginOpen(true);
-                }}
+              <Button                
+                onClick={handleStartCall}
                 disabled={disabled}
                 className="xs:px-4 xs:py-2 ml-2 flex-shrink-0 transform rounded-lg border border-purple-400/30 bg-gradient-to-r from-purple-500 to-violet-500 px-3 py-1.5 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-600 hover:to-violet-600 hover:shadow-2xl sm:px-6 sm:py-2.5 sm:text-sm md:px-8"
               >
@@ -304,19 +325,19 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
                 <div className="xs:space-y-5 animate-in fade-in slide-in-from-bottom-8 space-y-4 duration-1000 sm:space-y-6 md:space-y-8">
                   <div>
                     <span className="xs:px-3 xs:py-1.5 inline-block rounded-full border border-violet-500/30 bg-gradient-to-r from-purple-500/10 to-violet-500/10 px-2.5 py-1 text-xs font-semibold tracking-widest text-violet-600 uppercase sm:px-4 dark:text-violet-300">
-                      Next Generation Voice AI
+                      AI-Powered IT Support
                     </span>
                   </div>
                   <h1 className="xs:text-3xl text-2xl leading-tight font-bold tracking-tight text-slate-700 sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl dark:text-white">
-                    Conversational AI
+                    IT Helpdesk Support
                     <span className="block bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">
-                      Redefined
+                      Available 24/7
                     </span>
                   </h1>
                   <p className="xs:text-base max-w-xl text-sm leading-relaxed font-light text-slate-600 sm:text-lg md:text-lg dark:text-slate-300">
-                    Enterprise-grade voice technology with human-like natural language
-                    understanding. Deploy sophisticated AI conversations at scale with millisecond
-                    responsiveness.
+                    Get instant IT support through natural voice conversation. Our AI assistant helps
+                    troubleshoot issues, provides step-by-step solutions, and automatically creates
+                    helpdesk tickets when needed.
                   </p>
                 </div>
 
@@ -350,14 +371,11 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
 
                 <div className="xs:pt-3 pt-2 sm:pt-4">
                   <Button
-                    onClick={() => {
-                      if (disabled) return;
-                      setIsLoginOpen(true);
-                    }}
+                    onClick={handleStartCall}
                     disabled={disabled}
                     className="xs:px-6 xs:py-3 xs:text-base w-full transform rounded-lg border border-violet-400/40 bg-gradient-to-r from-purple-600 to-violet-600 px-4 py-2.5 text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:border-violet-300/60 hover:from-purple-700 hover:to-violet-700 hover:shadow-2xl sm:px-8 sm:py-3.5 md:px-10 md:py-4 md:text-lg lg:w-auto"
                   >
-                    Start Right Now
+                    Get IT Support Now
                   </Button>
                 </div>
               </div>
@@ -398,10 +416,35 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
                         xmlns="http://www.w3.org/2000/svg"
                         className="xs:w-12 xs:h-12 h-10 w-10 text-white drop-shadow-lg sm:h-16 sm:w-16 md:h-20 md:w-20"
                       >
+                        {/* Computer Monitor with Headset */}
                         <path
-                          d="M15 24V40C15 40.7957 14.6839 41.5587 14.1213 42.1213C13.5587 42.6839 12.7956 43 12 43C11.2044 43 10.4413 42.6839 9.87868 42.1213C9.31607 41.5587 9 40.7957 9 40V24C9 23.2044 9.31607 22.4413 9.87868 21.8787C10.4413 21.3161 11.2044 21 12 21C12.7956 21 13.5587 21.3161 14.1213 21.8787C14.6839 22.4413 15 23.2044 15 24ZM22 5C21.2044 5 20.4413 5.31607 19.8787 5.87868C19.3161 6.44129 19 7.20435 19 8V56C19 56.7957 19.3161 57.5587 19.8787 58.1213C20.4413 58.6839 21.2044 59 22 59C22.7956 59 23.5587 58.6839 24.1213 58.1213C24.6839 57.5587 25 56.7957 25 56V8C25 7.20435 24.6839 6.44129 24.1213 5.87868C23.5587 5.31607 22.7956 5 22 5ZM32 13C31.2044 13 30.4413 13.3161 29.8787 13.8787C29.3161 14.4413 29 15.2044 29 16V48C29 48.7957 29.3161 49.5587 29.8787 50.1213C30.4413 50.6839 31.2044 51 32 51C32.7956 51 33.5587 50.6839 34.1213 50.1213C34.6839 49.5587 35 48.7957 35 48V16C35 15.2044 34.6839 14.4413 34.1213 13.8787C33.5587 13.3161 32.7956 13 32 13ZM42 21C41.2043 21 40.4413 21.3161 39.8787 21.8787C39.3161 22.4413 39 23.2044 39 24V40C39 40.7957 39.3161 41.5587 39.8787 42.1213C40.4413 42.6839 41.2043 43 42 43C42.7957 43 43.5587 42.6839 44.1213 42.1213C44.6839 41.5587 45 40.7957 45 40V24C45 23.2044 44.6839 22.4413 44.1213 21.8787C43.5587 21.3161 42.7957 21 42 21ZM52 17C51.2043 17 50.4413 17.3161 49.8787 17.8787C49.3161 18.4413 49 19.2044 49 20V44C49 44.7957 49.3161 45.5587 49.8787 46.1213C50.4413 46.6839 51.2043 47 52 47C52.7957 47 53.5587 46.6839 54.1213 46.1213C54.6839 45.5587 55 44.7957 55 44V20C55 19.2044 54.6839 18.4413 54.1213 17.8787C53.5587 17.3161 52.7957 17 52 17Z"
-                          fill="currentColor"
+                          d="M8 12C8 10.8954 8.89543 10 10 10H54C55.1046 10 56 10.8954 56 12V42C56 43.1046 55.1046 44 54 44H10C8.89543 44 8 43.1046 8 42V12Z"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          fill="none"
                         />
+                        <path
+                          d="M24 44V50H40V44"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                        />
+                        <path
+                          d="M18 50H46"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                        />
+                        {/* Headset */}
+                        <path
+                          d="M20 22C20 18 24 15 32 15C40 15 44 18 44 22V28"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          fill="none"
+                        />
+                        <circle cx="20" cy="28" r="3" fill="currentColor" />
+                        <circle cx="44" cy="28" r="3" fill="currentColor" />
                       </svg>
                     </div>
                   </div>
@@ -458,17 +501,17 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
           {/* Footer */}
           <div className="xs:px-4 xs:py-4 relative right-0 bottom-0 left-0 z-20 border-t border-black/10 px-3 py-3 sm:px-6 sm:py-5 md:px-8 md:py-6 lg:px-16 dark:border-white/10">
             <p className="text-center text-xs font-light text-slate-600 sm:text-sm dark:text-slate-400">
-              Know more{' '}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://10xds.com/about-us/"
-                className="font-semibold text-violet-500 underline underline-offset-2 transition-colors duration-300 hover:text-violet-400 dark:text-violet-400 dark:hover:text-violet-300"
-              >
-                about us
-              </a>{' '}
-              · © Exponential Digital Solutions (10xDS)
-            </p>
+                Need help?{' '}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://10xds.com/contact-us/"
+                  className="font-semibold text-violet-500 underline underline-offset-2 transition-colors duration-300 hover:text-violet-400 dark:text-violet-400 dark:hover:text-violet-300"
+                >
+                  Contact IT Support
+                </a>{' '}
+                · © Exponential Digital Solutions (10xDS) IT Helpdesk
+              </p>
           </div>
         </section>
 
@@ -476,6 +519,7 @@ export const Welcome = React.forwardRef<HTMLDivElement, React.ComponentProps<'di
           isOpen={isLoginOpen}
           onClose={() => setIsLoginOpen(false)}
           onSuccess={() => {
+            localStorage.setItem('loginTimestamp', Date.now().toString());
             onStartCall();
             setIsLoginOpen(false);
           }}

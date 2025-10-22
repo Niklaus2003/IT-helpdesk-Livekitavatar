@@ -269,13 +269,13 @@ export const SessionView = ({
                   transition={{ duration: 0.3, ease: 'easeOut' }}
                   className={cn(
                     'z-40 flex w-full flex-col rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800',
+                    // Full viewport height minus top/bottom padding and avatar height on small screens
+                    'h-[calc(100svh-16rem-140px-1rem)]',
                     // On larger screens, it's fixed to the bottom. On smaller screens, it's part of the flex layout.
-                    'lg:fixed lg:bottom-48 lg:left-1/2 lg:w-3/5 lg:-translate-x-1/2'
+                    'lg:fixed lg:bottom-48 lg:left-1/2 lg:w-3/5 lg:-translate-x-1/2 lg:h-[70vh]'
                   )}
                   style={{
-                    // Full viewport height minus top/bottom padding and avatar height on small screens
-                    height: 'calc(100svh - 16rem - 140px - 1rem)',
-                    maxHeight: 'calc(100svh - 20rem)',
+                    maxHeight: 'calc(100svh - 20rem)'
                   }}
                 >
                   <div ref={chatRef} className="flex-1 space-y-4 overflow-y-auto p-4">
