@@ -10,7 +10,7 @@ The agent runs in the cloud, providing real-time assistance, and can even <b>rai
 
 <h2>🚀 Live Demo</h2>
 <p>
-🔗 <a href="https://it-helpdesk-agent.netlify.app" target="_blank">Live Demo (Placeholder)</a>  
+🔗 <a href="https://it-helpdesk-agent.netlify.app" target="_blank">Live Demo</a>  
 </p>
 
 <hr>
