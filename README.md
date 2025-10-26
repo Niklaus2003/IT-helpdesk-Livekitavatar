@@ -6,7 +6,7 @@ A voice-first AI assistant that automates and streamlines internal IT support. E
 
 ## Live Demo
 
-Live demo (placeholder): {https://it-helpdesk-agent.netlify.app]
+Live demo (placeholder): [https://it-helpdesk-agent.netlify.app]
 
 [IT Helpdesk Agent UI]
 
